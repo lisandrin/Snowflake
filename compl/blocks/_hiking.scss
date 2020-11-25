@@ -1,0 +1,41 @@
+.hiking-scroll{
+    width: 100%;
+    display: flex;
+    height: auto;
+    background-image: url(/imgs/hiking.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .hiking-content{
+        width: 100%;
+        display: flex;
+        height: auto;
+
+        .text{
+            width: 50%;
+            // background: rgba($color: lightblue, $alpha: 0.5);
+            display: inline-block;
+            padding: 40px;
+
+            @media (max-width:905px) {
+                width: 70%;
+            }
+
+            @media (max-width:642px) {
+                width: 100%;
+            }
+
+            @include head-text;
+
+            p{
+                padding-top: 20px;
+                text-align: left;
+            }
+            
+             @include button;
+            
+        }
+    }
+}

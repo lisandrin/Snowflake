@@ -1,0 +1,552 @@
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  padding-top: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+header nav {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  height: 50px;
+  -ms-grid-columns: 40% 14% 40%;
+      grid-template-columns: 40% 14% 40%;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+header nav ul {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  background-color: none;
+  text-align: left;
+  list-style-position: outside;
+}
+
+header nav ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+header nav ul li:hover {
+  background-color: #538492;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-family: serif;
+  color: #d9e5eb;
+  font-size: 17px;
+  padding: 0 25px;
+  font-weight: 400;
+  font-style: normal;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+header nav .logo {
+  display: inline-block;
+  text-align: center;
+  margin-top: -40px;
+}
+
+header nav .logo img {
+  width: 60px;
+  height: 60px;
+  background-size: 100px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+header nav .logo h3 {
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-size: 22px;
+  font-family: Oswald,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+}
+
+.mountains {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 650px;
+}
+
+.mountains .mountains-bg {
+  width: 100%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(/imgs/mountains.jpg);
+  background-position: top center;
+  background-repeat: repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.mountains .mountains-content {
+  width: 100%;
+  display: inline-block;
+  height: auto;
+  z-index: 2;
+}
+
+.mountains .mountains-content .text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 300px;
+  z-index: 2;
+  color: #222;
+}
+
+.mountains .mountains-content .text p {
+  color: #222;
+}
+
+.ski-relax {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+  background-image: url(/imgs/trees.png);
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  background-color: #fff;
+}
+
+.ski-relax .ski-relax-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+}
+
+.ski-relax .ski-relax-content .text {
+  width: 45%;
+  min-height: 300px;
+  font-family: serif;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.ski-relax .ski-relax-content .text h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px 0 30px;
+  font-size: 40px;
+}
+
+.ski-relax .ski-relax-content .text p {
+  margin: 0 0 15px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #333;
+  font-family: serif;
+}
+
+.advertrow {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 500px;
+  background-image: url(/imgs/house.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+}
+
+.advertrow .advertrow-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 500px;
+  position: relative;
+}
+
+.advertrow .advertrow-content .cards {
+  width: 60%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  position: absolute;
+  top: 150px;
+  right: 0;
+}
+
+.advertrow .advertrow-content .cards .card {
+  width: 165px;
+  min-height: 264px;
+  display: inline-block;
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.advertrow .advertrow-content .cards .card img {
+  width: 70px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advertrow .advertrow-content .cards .card h3 {
+  font-size: 23px;
+  color: #333;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.blog-events {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.blog-events .blog-events-content {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.blog-events .blog-events-content .text {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.blog-events .blog-events-content .text h2 {
+  padding: 15px 0 30px 0;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 56px;
+  text-transform: uppercase;
+}
+
+.blog-events .blog-events-content .text p {
+  width: 100%;
+  padding: 0 18% 0 18%;
+  line-height: 32px;
+  text-align: center;
+}
+
+.blog-events .blog-events-content .cards {
+  padding-top: 40px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20.8125em 20.8125em 20.8125em;
+      grid-template-columns: 20.8125em 20.8125em 20.8125em;
+  height: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.blog-events .blog-events-content .cards .card {
+  width: 100%;
+  display: inline-block;
+  background-color: none;
+  text-align: left;
+}
+
+.blog-events .blog-events-content .cards .card img {
+  width: 333px;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.blog-events .blog-events-content .cards .card .card-text {
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.blog-events .blog-events-content .cards .card .card-text h4 {
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 15px;
+  text-align: left;
+  font-weight: bold !important;
+}
+
+.blog-events .blog-events-content .cards .card .card-text span {
+  display: inline-block;
+  width: 80%;
+  margin: 0 0 10px;
+  padding: 4px 3px 3px;
+  font-size: 13px;
+  color: #999;
+  font-family: serif;
+}
+
+.blog-events .blog-events-content .cards .card .card-text button {
+  background: #538492;
+  border: 1px solid #538492;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.blog-events .blog-events-content .cards .card .card-text button:hover {
+  background-color: #eee;
+}
+
+.blog-events .blog-events-content .cards .card .card-text button:hover > a {
+  color: #333;
+  background-color: #eee;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.blog-events .blog-events-content .cards .card .card-text button a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.hiking-scroll {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  background-image: url(/imgs/hiking.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.hiking-scroll .hiking-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+}
+
+.hiking-scroll .hiking-content .text {
+  width: 50%;
+  background: rgba(173, 216, 230, 0.5);
+  display: inline-block;
+  padding: 40px;
+}
+
+.hiking-scroll .hiking-content .text p {
+  padding-top: 20px;
+}
+
+.numbers {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.numbers .numbers-content {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16.875em 16.875em 16.875em 16.875em;
+      grid-template-columns: 16.875em 16.875em 16.875em 16.875em;
+}
+
+.numbers .numbers-content .card {
+  width: 100%;
+  display: inline-block;
+  height: 7em;
+  text-align: center;
+}
+
+.numbers .numbers-content .card span {
+  font-size: 60px;
+  line-height: 72px;
+  color: #cccccc;
+}
+
+.numbers .numbers-content .card h2 {
+  font-size: 20px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.footer {
+  width: 100%;
+  display: inline-block;
+  background-color: #000000;
+  background-image: url(/imgs/mountain_footer.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0 0;
+  color: #fff;
+  padding-top: 240px;
+  padding-bottom: 100px;
+  height: auto;
+}
+
+.footer .footer-content {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-content .info {
+  width: 60%;
+  display: block;
+  height: auto;
+  background-color: olive;
+}
+
+.footer .footer-content .info h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  line-height: 56px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fff;
+  padding: 15px 0 30px 0;
+}
+
+.footer .footer-content .info .info-text {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 13.125em 13.125em 13.125em;
+      grid-template-columns: 13.125em 13.125em 13.125em;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.footer .footer-content .info .info-text .card {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  height: 110px;
+}
+
+.footer .footer-content .info .info-text .card h4 {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  padding: 15px 0 15px 0;
+  color: #fff;
+  text-align: left;
+  letter-spacing: -1px;
+}
+
+.footer .footer-content .info .info-text .card .icon {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-content .info .info-text .card .icon img {
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
+.footer .footer-content .social {
+  width: 40%;
+  display: inline-block;
+  background-color: peachpuff;
+}
+
+.footer .footer-content .social ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer .footer-content .social ul li {
+  list-style: none;
+  cursor: pointer;
+  padding-right: 15px;
+}
+
+.footer .footer-content .social ul li a {
+  color: #fff;
+  text-decoration: none;
+  vertical-align: top;
+  padding: 0;
+  font-family: Oswald,sans-serif;
+  font-style: normal;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 28px;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer .footer-content .social ul li a:hover {
+  color: grey;
+}
+
+.footer .footer-content .social .text {
+  width: 100%;
+  display: inline-block;
+  text-align: right;
+}
+/*# sourceMappingURL=blocks.css.map */

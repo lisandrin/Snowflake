@@ -1,0 +1,48 @@
+*{
+    margin:0;
+	padding:0;
+	box-sizing:border-box;
+    font-family:Arial;
+}
+html{ 
+    font-family: serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+    color: #333333;
+    font-size: 16px;
+    line-height: 2;
+    font-family: serif;
+    text-align:center;
+    font-weight: 400;
+    font-style: normal;
+}
+.container{
+    width: 1200px;
+    margin:auto;  
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 15px 0;
+    margin: 0;
+    color: #333333;
+    font-size: 2em;
+    line-height: 1.4;
+    font-family: Montserrat,sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+}
+ 
+p{
+    font-family: serif;
+    font-size: 1.2em;
+}
+
+
+// <dd class="published">
+//                                 <time datetime="2017-12-14T09:11:02+00:00" itemprop="datePublished">
+//                                     14 December 2017				</time>
+//                             </dd>

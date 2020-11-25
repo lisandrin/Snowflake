@@ -1,0 +1,37 @@
+@mixin button {
+    .btn{
+        width: 100%;
+        text-align: left;
+        height: auto;
+        padding-top: 10px;
+
+        button{
+            text-align: left;          
+            background: #538492;
+            border: 1px solid #538492;
+            color: #fff;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            padding: 15px;
+            cursor: pointer;
+            &:hover{
+                background-color: #eee;
+            }
+    
+            &:hover>a{
+                color: #333;
+                background-color: #eee;
+                transition: all 0.3s;
+            }
+    
+            a{
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: inherit;
+                line-height: inherit;
+            }
+             
+        }
+    }
+}

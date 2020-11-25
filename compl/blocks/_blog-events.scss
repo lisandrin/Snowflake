@@ -1,0 +1,89 @@
+.blog-events{
+    width: 100%;
+    display: flex;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 100px;
+
+    .blog-events-content{
+        width: 100%;
+        display: block;
+        height: auto;
+
+        .text{
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+
+            @include head-text;
+
+            p{
+                width: 100%;
+                padding: 0 18% 0 18%;
+                line-height: 32px;
+                text-align: center;
+            }
+        }
+
+        .cards{
+            padding-top: 40px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 20.8125em 20.8125em 20.8125em;
+            height: auto;
+            justify-content: space-around;
+
+            @media (max-width: 1014px) {
+                grid-template-columns: 1fr;
+            }
+
+            .card{
+                width: 100%;
+                display: inline-block;
+                background-color: none;
+                text-align: left;
+                
+                img{
+                    width: 333px;
+                    height: auto;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    justify-self: center;
+
+                    @media (max-width: 1014px) {
+                        width: 100%;
+                    }
+                }
+
+                .card-text{
+                    width: 100%;
+                    text-align: left;
+                    display: inline-block;
+                    padding-left: 15px;
+                    padding-right: 15px;
+
+                    h4{
+                        padding-bottom: 0;
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        margin-top: 15px;
+                        text-align: left;
+                        font-weight: bold !important;
+                    }
+
+                    span{
+                        display: inline-block;
+                        width: 80%;
+                        margin: 0 0 10px;
+                        padding: 4px 3px 3px;
+                        font-size: 13px;
+                        color: #999;
+                        font-family: serif;
+                    }
+
+                    @include button;
+                }
+            }
+        }
+    }
+}

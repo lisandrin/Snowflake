@@ -1,0 +1,181 @@
+.numbers{
+    width: 100%;
+    display: flex;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 100px;
+
+        .numbers-content{
+            justify-content: space-around;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 9em 9em 9em 9em;
+
+            @media (max-width:712px) {
+                grid-template-columns: 10em 10em;
+                row-gap: 20px;
+            }
+
+            @media (max-width:460px) {
+                grid-template-columns:10em;
+                row-gap: 40px;
+            }
+
+            .card{
+                width: 100%;
+                display: inline-block;
+                height: 8em;
+                text-align: center;
+
+                span{
+                    font-size: 60px;
+                    line-height: 72px;
+                    color: #cccccc;                
+                }
+
+                h2{
+                    font-size: 20px;
+                    line-height: 40px;
+                    text-transform: uppercase;
+                    color: black;
+                }
+            }
+        }
+}
+
+.footer{
+    width: 100%;
+    display: inline-block;
+    background-color: #000000;
+    background-image: url(/imgs/mountain_footer.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0 0;
+    color: #fff;
+    padding-top: 240px;
+    padding-bottom: 100px;
+    height: auto;
+
+    .footer-content{
+        width: 100%;
+        height: auto;
+        display: flex;
+
+        @media (max-width:1215px) {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .info{
+            width: 52%;
+            display: block;
+            height: auto;
+            background-color: none;
+
+            h2{
+                font-size: 40px;
+                letter-spacing: 2px;
+                line-height: 56px;
+                text-align: left;
+                text-transform: uppercase;
+                font-weight: 400;
+                color: #fff;
+                padding: 15px 0 30px 0;
+            }
+
+            .info-text{
+                width: 100%;
+                display: grid;
+                grid-template-columns: 13.125em 13.125em 13.125em;
+                column-gap: 10px;
+
+                .card{
+                    width: 100%;
+                    display: inline-block;
+                    text-align: left;
+                    height: 110px;
+
+                    @include h4;
+                    
+                    .icon{
+                        width: 100%;
+                        display: flex;
+
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            float: left;
+
+                            animation-name: icon;
+                            animation-duration: 0.7s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: infinite;
+                            animation-direction: alternate;
+                            animation-delay: 0s;
+
+                            @keyframes icon {
+                                from{
+                                    transform: rotate(15deg);
+                                }
+                                to{
+                                    transform: rotate(-15deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .social{
+            width: 40%;
+            display: inline-block;
+            background-color: none;
+
+            ul{
+                width: 100%;
+                display: flex;
+                padding-top: 20px;
+                justify-content: flex-end;
+
+                li{
+                    list-style: none; 
+                    cursor: pointer;
+                    padding-right: 15px;
+
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                        vertical-align: top;
+                        padding: 0;
+                        font-family: Oswald,sans-serif;
+                        font-style: normal;
+                        font-size: 35px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        text-transform: uppercase;
+                        transition: 0.5s;
+
+                        &:hover{
+                            color: #B7C8E2;
+                        }
+                    }
+                }
+            }
+
+            .text{
+                width: 100%;
+                display: inline-block;
+                text-align: right;
+                padding: 10px;
+                padding-top: 40px;
+
+                @include h4;
+                h4{
+                    text-align: right !important;
+                }
+            }
+        }
+    }
+}
