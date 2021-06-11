@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Dr+Sugiyama&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
 *{
     margin:0;
 	padding:0;
 	box-sizing:border-box;
-    font-family:Arial;
 }
 html{ 
-    font-family: serif;
+
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
@@ -14,7 +16,7 @@ body{
     color: #333333;
     font-size: 16px;
     line-height: 2;
-    font-family: serif;
+    font-family: 'Gilda Display';
     text-align:center;
     font-weight: 400;
     font-style: normal;
@@ -24,7 +26,7 @@ body{
     margin:auto;  
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
     padding: 15px 0;
     margin: 0;
     color: #333333;
@@ -37,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
  
 p{
-    font-family: serif;
+    font-family: 'Gilda Display';
     font-size: 1.2em;
 }
 

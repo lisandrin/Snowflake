@@ -1,13 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Dr+Sugiyama&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Arial;
 }
 
 html {
-  font-family: serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
@@ -17,7 +17,7 @@ body {
   color: #333333;
   font-size: 16px;
   line-height: 2;
-  font-family: serif;
+  font-family: 'Gilda Display';
   text-align: center;
   font-weight: 400;
   font-style: normal;
@@ -28,7 +28,7 @@ body {
   margin: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   padding: 15px 0;
   margin: 0;
   color: #333333;
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-family: serif;
+  font-family: 'Gilda Display';
   font-size: 1.2em;
 }
 
@@ -504,7 +504,6 @@ p {
   padding: 4px 3px 3px;
   font-size: 13px;
   color: #999;
-  font-family: serif;
 }
 
 .blog-events .blog-events-content .cards .card .card-text .btn {
@@ -657,19 +656,19 @@ p {
       grid-template-columns: 9em 9em 9em 9em;
 }
 
-@media (max-width: 712px) {
+@media (max-width: 731px) {
   .numbers .numbers-content {
-    -ms-grid-columns: 10em 10em;
-        grid-template-columns: 10em 10em;
-    row-gap: 20px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    row-gap: 2em;
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 475px) {
   .numbers .numbers-content {
-    -ms-grid-columns: 10em;
-        grid-template-columns: 10em;
-    row-gap: 40px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 2em;
   }
 }
 
@@ -695,7 +694,9 @@ p {
 
 .footer {
   width: 100%;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #000000;
   background-image: url(/imgs/mountain_footer.jpg);
   background-position: top center;
@@ -716,17 +717,14 @@ p {
   display: flex;
 }
 
-@media (max-width: 1215px) {
+@media (max-width: 1200px) {
   .footer .footer-content {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    display: block;
   }
 }
 
 .footer .footer-content .info {
-  width: 52%;
+  width: 100%;
   display: block;
   height: auto;
   background-color: none;
@@ -747,27 +745,34 @@ p {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 13.125em 13.125em 13.125em;
-      grid-template-columns: 13.125em 13.125em 13.125em;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -webkit-column-gap: 10px;
           column-gap: 10px;
+}
+
+@media (max-width: 647px) {
+  .footer .footer-content .info .info-text {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .footer .footer-content .info .info-text .card {
   width: 100%;
   display: inline-block;
-  text-align: left;
-  height: 110px;
+  height: auto;
 }
 
 .footer .footer-content .info .info-text .card h4 {
-  font-size: 1.2em;
-  line-height: 25px;
-  text-transform: uppercase;
-  padding: 15px 0 15px 0;
-  color: #fff;
   text-align: left;
-  letter-spacing: -1px;
+  color: #fff;
+}
+
+@media (max-width: 647px) {
+  .footer .footer-content .info .info-text .card h4 {
+    text-align: center;
+  }
 }
 
 .footer .footer-content .info .info-text .card .icon {
@@ -818,26 +823,34 @@ p {
 }
 
 .footer .footer-content .social {
-  width: 40%;
+  width: 100%;
   display: inline-block;
   background-color: none;
 }
 
 .footer .footer-content .social ul {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 20px;
+  padding-top: 2em;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-bottom: 1em;
+}
+
+@media (max-width: 1200px) {
+  .footer .footer-content .social ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer .footer-content .social ul li {
   list-style: none;
   cursor: pointer;
-  padding-right: 15px;
+  margin: 10px;
 }
 
 .footer .footer-content .social ul li a {
@@ -862,22 +875,20 @@ p {
 .footer .footer-content .social .text {
   width: 100%;
   display: inline-block;
-  text-align: right;
-  padding: 10px;
-  padding-top: 40px;
 }
 
 .footer .footer-content .social .text h4 {
-  font-size: 1.2em;
-  line-height: 25px;
-  text-transform: uppercase;
-  padding: 15px 0 15px 0;
   color: #fff;
-  text-align: left;
-  letter-spacing: -1px;
+  text-align: right;
 }
 
-.footer .footer-content .social .text h4 {
-  text-align: right !important;
+@media (max-width: 780px) {
+  .footer .footer-content .social .text h4 {
+    text-align: center;
+  }
+}
+
+.footer .footer-content .social .text p {
+  padding: 0.6em;
 }
 /*# sourceMappingURL=style.css.map */

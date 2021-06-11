@@ -11,16 +11,14 @@
             display: grid;
             grid-template-columns: 9em 9em 9em 9em;
 
-            @media (max-width:712px) {
-                grid-template-columns: 10em 10em;
-                row-gap: 20px;
+            @media (max-width:731px) {
+                grid-template-columns: 1fr 1fr;
+                row-gap: 2em;
             }
-
-            @media (max-width:460px) {
-                grid-template-columns:10em;
-                row-gap: 40px;
+            @media (max-width:475px) {
+                grid-template-columns: 1fr;
+                row-gap: 2em;
             }
-
             .card{
                 width: 100%;
                 display: inline-block;
@@ -45,7 +43,7 @@
 
 .footer{
     width: 100%;
-    display: inline-block;
+    display: flex;
     background-color: #000000;
     background-image: url(/imgs/mountain_footer.jpg);
     background-position: top center;
@@ -61,17 +59,18 @@
         width: 100%;
         height: auto;
         display: flex;
+       
 
-        @media (max-width:1215px) {
-            display: grid;
-            grid-template-columns: 1fr; 
-        }
+       @media (max-width: 1200px) {
+           display: block;
+       }
 
         .info{
-            width: 52%;
+            width: 100%;
             display: block;
             height: auto;
             background-color: none;
+            
 
             h2{
                 font-size: 40px;
@@ -87,16 +86,26 @@
             .info-text{
                 width: 100%;
                 display: grid;
-                grid-template-columns: 13.125em 13.125em 13.125em;
+                grid-template-columns: 1fr 1fr 1fr;
                 column-gap: 10px;
+                @media (max-width: 647px) {
+                    grid-template-columns: 1fr;
+
+                }
 
                 .card{
                     width: 100%;
                     display: inline-block;
-                    text-align: left;
-                    height: 110px;
+                    height: auto;
 
-                    @include h4;
+                    h4{
+                        text-align: left;
+                        color: #fff;
+
+                        @media (max-width: 647px) {
+                            text-align: center;
+                        }
+                    }
                     
                     .icon{
                         width: 100%;
@@ -129,20 +138,24 @@
         }
 
         .social{
-            width: 40%;
+            width: 100%;
             display: inline-block;
             background-color: none;
 
             ul{
-                width: 100%;
                 display: flex;
-                padding-top: 20px;
+                padding-top: 2em;
                 justify-content: flex-end;
+                padding-bottom: 1em;
+
+                @media (max-width: 1200px) {
+                    justify-content: center;
+                }
 
                 li{
                     list-style: none; 
                     cursor: pointer;
-                    padding-right: 15px;
+                    margin: 10px;
 
                     a{
                         color: #fff;
@@ -167,13 +180,17 @@
             .text{
                 width: 100%;
                 display: inline-block;
-                text-align: right;
-                padding: 10px;
-                padding-top: 40px;
 
-                @include h4;
                 h4{
-                    text-align: right !important;
+                    color: #fff;
+                    text-align: right;
+
+                    @media (max-width: 780px) {
+                        text-align: center;
+                    }
+                }
+                p{
+                    padding: 0.6em;
                 }
             }
         }
